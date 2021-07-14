@@ -30,7 +30,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 40px 0;
+  margin: 40px;
 }
 
 .code {
@@ -48,4 +48,31 @@ body {
 .code::-webkit-outer-spin-button {
   margin: 0;
   -webkit-appearance: none;
+}
+
+.code:valid {
+  border-color: #3498db;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+}
+
+.info {
+  display: inline-block;
+  padding: 10px;
+  line-height: 20px;
+  background-color: #eaeaea;
+  max-width: 400px;
+  color: #777;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .code-container {
+    flex-wrap: wrap;
+  }
+
+  .code {
+    font-size: 60px;
+    height: 80px;
+    max-width: 70px;
+  }
 }
