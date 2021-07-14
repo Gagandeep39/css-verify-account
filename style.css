@@ -43,3 +43,9 @@ body {
   text-align: center;
   font-weight: 300;
 }
+
+.code::-webkit-inner-spin-button,
+.code::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
